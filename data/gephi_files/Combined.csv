@@ -1,0 +1,416 @@
+source,target,weight,community
+Walter,Albuquerque,48,0
+Walter,Skyler,1074,0
+Walter,Walt Jr.,77,0
+Walter,Hank,676,0
+Walter,Bogdan,22,0
+Walter,Steven Gomez,6,0
+Walter,Cook,6,0
+Walter,Jesse,2146,0
+Walter,Gomez,34,0
+Walter,Emilio,55,0
+Walter,Marie,181,0
+Walter,DEA,60,0
+Walter,Ken,6,0
+Walter,Combo,27,0
+Walter,Delcavoli,39,0
+Walter,Badger,17,0
+Walter,Elliott,56,0
+Walter,Gretchen,58,0
+Walter,Hugo,5,0
+Walter,Tuco Salamanca,221,0
+Walter,Skinny Pete,33,0
+Walter,No-Doze,12,0
+Walter,Gonzo,5,0
+Walter,Clovis,11,0
+Walter,Carmen Molina,5,0
+Walter,Spooge,25,0
+Walter,Ted Beneke,62,0
+Walter,Jane Margolis,73,0
+Walter,Tortuga,10,0
+Walter,Saul Goodman,303,0
+Walter,Jimmy,5,0
+Walter,Denny,11,0
+Walter,Bravenec,6,0
+Walter,Gus Fring,10,0
+Walter,Donald Margolis,15,0
+Walter,Mike,413,0
+Walter,Carmen,17,0
+Walter,Cousins,46,0
+Walter,Leonel Salamanca,17,0
+Walter,Victor,39,0
+Walter,Marco,5,0
+Walter,Bolsa,16,0
+Walter,Merkert,5,0
+Walter,Gale Boetticher,115,0
+Walter,Joe,6,0
+Walter,Andrea Cantillo,22,0
+Walter,Huell Babineaux,27,0
+Walter,Lawson,26,0
+Walter,Brock,48,0
+Walter,Tyrus Kitt,33,0
+Walter,Tim,5,0
+Walter,Pollos,5,0
+Walter,Cartel,11,0
+Walter,Juan Bolsa,5,0
+Walter,Barry Goodman,10,0
+Walter,Max Arciniega,5,0
+Walter,Francesca,5,0
+Walter,Rebecca,5,0
+Walter,Hector Salamanca,6,0
+Walter,Peter Schuler,5,0
+Walter,Todd Alquist,100,0
+Walter,Lydia,55,0
+Walter,Kuby,17,0
+Walter,Declan,35,0
+Walter,Dan Wachsberger,5,0
+Walter,Kaylee,5,0
+Walter,Jack Welker,161,0
+Walter,Carol,6,0
+Walter,Salamanca,6,0
+Walter,Kenny,11,0
+Walter,Ed,46,0
+Walter,Ramey,6,0
+Walter,Louis,5,0
+Albuquerque,DEA,18,1
+Albuquerque,Hank,24,1
+Albuquerque,Skyler,11,1
+Albuquerque,Jesse,17,1
+Albuquerque,Badger,6,1
+Albuquerque,Merkert,6,1
+Albuquerque,Gomez,11,1
+Albuquerque,Combo,5,1
+Albuquerque,Donald Margolis,5,1
+Albuquerque,Cousins,5,1
+Albuquerque,Francesca,6,1
+Albuquerque,Gale Boetticher,6,1
+Albuquerque,ASAC George Merkert,6,1
+Albuquerque,Mike,5,1
+Albuquerque,Ed,5,1
+Skyler,Walt Jr.,43,0
+Skyler,Marie,187,0
+Skyler,Jesse,149,0
+Skyler,Emilio,6,0
+Skyler,DEA,5,0
+Skyler,Hank,203,0
+Skyler,Delcavoli,18,0
+Skyler,Jake,5,0
+Skyler,Elliott,5,0
+Skyler,Hugo,5,0
+Skyler,Louis,5,0
+Skyler,Tuco Salamanca,5,0
+Skyler,Gretchen,11,0
+Skyler,Ted Beneke,148,0
+Skyler,Jane Margolis,10,0
+Skyler,Donald Margolis,10,0
+Skyler,Mike,30,0
+Skyler,Bravenec,5,0
+Skyler,Don,5,0
+Skyler,Saul Goodman,56,0
+Skyler,Cousins,5,0
+Skyler,Combo,5,0
+Skyler,Huell Babineaux,5,0
+Skyler,Gale Boetticher,10,0
+Skyler,Bogdan,17,0
+Skyler,Patrick Kuby,5,0
+Skyler,Kuby,6,0
+Skyler,Cartel,5,0
+Skyler,Brock,10,0
+Skyler,Lydia,22,0
+Skyler,Jack Welker,10,0
+Skyler,Todd Alquist,11,0
+Skyler,Ed,6,0
+Walt Jr.,Jesse,5,2
+Walt Jr.,Mike,10,2
+Walt Jr.,Marie,12,2
+Walt Jr.,Gale Boetticher,11,2
+Walt Jr.,Hank,11,2
+Walt Jr.,Madrigal,5,2
+Walt Jr.,Saul Goodman,12,2
+Walt Jr.,Brock,5,2
+Hank,DEA,165,3
+Hank,Marie,281,3
+Hank,Bogdan,10,3
+Hank,Steven Gomez,5,3
+Hank,Gomez,161,3
+Hank,Emilio,6,3
+Hank,Jesse,260,3
+Hank,Wendy,5,3
+Hank,Tuco Salamanca,54,3
+Hank,Hugo,6,3
+Hank,Gonzo,5,3
+Hank,Tio,6,3
+Hank,Salamanca,5,3
+Hank,Spooge,5,3
+Hank,Vanco,10,3
+Hank,Tortuga,5,3
+Hank,Jane Margolis,15,3
+Hank,Badger,17,3
+Hank,Saul Goodman,28,3
+Hank,Merkert,28,3
+Hank,Victor,10,3
+Hank,Janice,5,3
+Hank,Combo,6,3
+Hank,Ortega,6,3
+Hank,Cousins,11,3
+Hank,Joe,6,3
+Hank,Leonel Salamanca,11,3
+Hank,Marco,17,3
+Hank,Bolsa,5,3
+Hank,Ted Beneke,6,3
+Hank,Tim,5,3
+Hank,Gale Boetticher,44,3
+Hank,Mike,73,3
+Hank,Pollos,10,3
+Hank,Andrea Cantillo,5,3
+Hank,Cartel,6,3
+Hank,Max Arciniega,5,3
+Hank,Don,5,3
+Hank,SAC Ramey,6,3
+Hank,ASAC George Merkert,6,3
+Hank,Lydia,5,3
+Hank,Dan Wachsberger,6,3
+Hank,Dennis Markowski,6,3
+Hank,Jack Welker,12,3
+Hank,Carol,5,3
+Hank,Declan,5,3
+Hank,Todd Alquist,5,3
+Hank,Huell Babineaux,6,3
+Hank,Kuby,5,3
+Hank,Brock,5,3
+Hank,Kenny,5,3
+DEA,Jesse,48,3
+DEA,Hugo,6,3
+DEA,Tuco Salamanca,5,3
+DEA,Gonzo,12,3
+DEA,SAC Ramey,6,3
+DEA,Merkert,12,3
+DEA,Tortuga,6,3
+DEA,Badger,6,3
+DEA,Saul Goodman,5,3
+DEA,Cousins,5,3
+DEA,Gomez,29,3
+DEA,Bolsa,6,3
+DEA,Marie,6,3
+DEA,Gale Boetticher,12,3
+DEA,Victor,6,3
+DEA,Mike,24,3
+DEA,Madrigal,6,3
+DEA,Chow,6,3
+DEA,Lydia,11,3
+DEA,Jack Welker,11,3
+DEA,Ramey,6,3
+Marie,Jesse,41,2
+Marie,Jane Margolis,10,2
+Marie,Gomez,18,2
+Marie,Juan Bolsa,5,2
+Marie,Victor,5,2
+Marie,Saul Goodman,5,2
+Marie,Stephanie,11,2
+Marie,Gale Boetticher,6,2
+Marie,Andrea Cantillo,5,2
+Marie,Ted Beneke,5,2
+Marie,Ramey,6,2
+Bogdan,Kuby,6,0
+Gomez,Cook,6,1
+Gomez,Jesse,79,1
+Gomez,Saul Goodman,6,1
+Gomez,Cousins,5,1
+Gomez,Janice,5,1
+Gomez,Merkert,5,1
+Gomez,Mike,11,1
+Gomez,Tyrus Kitt,6,1
+Gomez,Madrigal,6,1
+Gomez,Dan Wachsberger,6,1
+Gomez,Huell Babineaux,5,1
+Gomez,Gang,5,1
+Gomez,Jack Welker,5,1
+Jesse,Emilio,5,4
+Jesse,Wendy,22,4
+Jesse,Combo,59,4
+Jesse,Skinny Pete,103,4
+Jesse,Ken,5,4
+Jesse,Jake,22,4
+Jesse,Badger,79,4
+Jesse,Elliott,5,4
+Jesse,Tuco Salamanca,146,4
+Jesse,Hugo,5,4
+Jesse,Hospital,6,4
+Jesse,No-Doze,5,4
+Jesse,Gonzo,6,4
+Jesse,Clovis,12,4
+Jesse,Salamanca,6,4
+Jesse,Gardiner,11,4
+Jesse,Paul,6,4
+Jesse,Jane Margolis,146,4
+Jesse,Spooge,57,4
+Jesse,Vanco,10,4
+Jesse,Saul Goodman,215,4
+Jesse,Denny,6,4
+Jesse,Delcavoli,5,4
+Jesse,Donald Margolis,15,4
+Jesse,Ted Beneke,5,4
+Jesse,Mike,379,4
+Jesse,Don,5,4
+Jesse,Marco,5,4
+Jesse,Victor,44,4
+Jesse,Cousins,5,4
+Jesse,Gale Boetticher,58,4
+Jesse,Merkert,6,4
+Jesse,Leonel Salamanca,5,4
+Jesse,Andrea Cantillo,84,4
+Jesse,Brock,47,4
+Jesse,Tyrus Kitt,28,4
+Jesse,Gus Fring,6,4
+Jesse,Cartel,47,4
+Jesse,Pollos,6,4
+Jesse,Gaff,11,4
+Jesse,Benicio,11,4
+Jesse,Max Arciniega,5,4
+Jesse,Joaquin,6,4
+Jesse,Kalanchoe,5,4
+Jesse,Munn,6,4
+Jesse,Joe,5,4
+Jesse,Jack Welker,81,4
+Jesse,Peter Schuler,5,4
+Jesse,Todd Alquist,79,4
+Jesse,Lydia,5,4
+Jesse,Kuby,11,4
+Jesse,Declan,5,4
+Jesse,Huell Babineaux,6,4
+Jesse,Kenny,6,4
+Jesse,SAC Ramey,5,4
+Jesse,Gang,5,4
+Wendy,Patrick,6,5
+Combo,Skinny Pete,17,6
+Combo,Badger,6,6
+Combo,Jane Margolis,5,6
+Combo,Ortega,6,6
+Combo,Andrea Cantillo,6,6
+Skinny Pete,Tuco Salamanca,5,6
+Skinny Pete,Badger,48,6
+Skinny Pete,Mike,5,6
+Delcavoli,Soper,6,0
+Delcavoli,Tuco Salamanca,5,0
+Delcavoli,Bravenec,11,0
+Badger,Clovis,6,6
+Badger,Soper,5,6
+Badger,Jane Margolis,5,6
+Badger,Getz,11,6
+Badger,Saul Goodman,21,6
+Badger,Jimmy,12,6
+Badger,Andrea Cantillo,5,6
+Elliott,Gretchen,36,0
+Tuco Salamanca,Hospital,5,3
+Tuco Salamanca,No-Doze,6,3
+Tuco Salamanca,Gonzo,6,3
+Tuco Salamanca,Tio,5,3
+Tuco Salamanca,SAC Ramey,6,3
+Tuco Salamanca,Salamanca,6,3
+Tuco Salamanca,Bolsa,6,3
+Tuco Salamanca,Cousins,5,3
+No-Doze,Gonzo,12,3
+SAC Ramey,Mike,6,3
+Salamanca,Leonel Salamanca,5,3
+Salamanca,Cousins,6,3
+Salamanca,Juan Bolsa,6,3
+Salamanca,Joaquin,5,3
+Salamanca,Max Arciniega,5,3
+Salamanca,Mike,6,3
+Merkert,Lydia,5,1
+Jane Margolis,Jimmy,5,6
+Jane Margolis,Donald Margolis,59,6
+Ted Beneke,Mike,10,0
+Ted Beneke,Saul Goodman,11,0
+Ted Beneke,Kuby,5,0
+Getz,Saul Goodman,6,6
+Saul Goodman,Mike,56,1
+Saul Goodman,Francesca,17,1
+Saul Goodman,Andrea Cantillo,5,1
+Saul Goodman,Victor,5,1
+Saul Goodman,Lawson,5,1
+Saul Goodman,Patrick Kuby,6,1
+Saul Goodman,Cartel,5,1
+Saul Goodman,Huell Babineaux,30,1
+Saul Goodman,Kuby,6,1
+Saul Goodman,Hector Salamanca,5,1
+Saul Goodman,Max Arciniega,5,1
+Saul Goodman,Ira,6,1
+Saul Goodman,Kaylee,10,1
+Saul Goodman,Ed,15,1
+Saul Goodman,Jack Welker,6,1
+Denny,Brock,5,4
+Denny,Lawson,6,4
+Donald Margolis,Mike,5,0
+Donald Margolis,Bravenec,5,0
+Mike,Marco,6,5
+Mike,Victor,48,5
+Mike,Cousins,6,5
+Mike,Leonel Salamanca,18,5
+Mike,Patrick,5,5
+Mike,Gale Boetticher,6,5
+Mike,Chow,15,5
+Mike,Tyrus Kitt,6,5
+Mike,Cartel,10,5
+Mike,Pollos,5,5
+Mike,Gaff,12,5
+Mike,Barry Goodman,6,5
+Mike,Joe,5,5
+Mike,Brock,5,5
+Mike,Lydia,17,5
+Mike,Kaylee,16,5
+Mike,Chris,16,5
+Mike,Dennis Markowski,5,5
+Mike,Dan Wachsberger,24,5
+Mike,Ira,5,5
+Mike,Ron,5,5
+Mike,Kuby,11,5
+Mike,Todd Alquist,5,5
+Mike,Declan,6,5
+Cousins,Leonel Salamanca,5,3
+Cousins,Bolsa,6,3
+Cousins,Marco,5,3
+Cousins,Juan Bolsa,6,3
+Don,Max Arciniega,5,0
+Marco,Leonel Salamanca,49,3
+Leonel Salamanca,Bolsa,5,3
+Victor,Gale Boetticher,12,4
+Victor,Tyrus Kitt,6,4
+Victor,Andrea Cantillo,6,4
+Juan Bolsa,Bolsa,5,3
+Bolsa,Max Arciniega,6,3
+Bolsa,Don Eladio Vuente,5,3
+Gale Boetticher,Tim,6,2
+Gale Boetticher,Pollos,11,2
+Gale Boetticher,Lydia,5,2
+Francesca,Huell Babineaux,6,1
+Andrea Cantillo,Brock,25,4
+Andrea Cantillo,Gang,6,4
+Andrea Cantillo,Jack Welker,5,4
+Brock,Huell Babineaux,6,4
+Chow,Chris,6,5
+Huell Babineaux,Kuby,24,1
+Kuby,Todd Alquist,5,0
+Cartel,Gaff,5,5
+Cartel,Don Eladio Vuente,6,5
+Cartel,Max Arciniega,6,5
+Cartel,Benicio,5,5
+Cartel,Barry Goodman,5,5
+Kalanchoe,Munn,6,4
+Jack Welker,Todd Alquist,28,5
+Jack Welker,Declan,6,5
+Jack Welker,Kenny,11,5
+Jack Welker,Ramey,5,5
+Jack Welker,Lydia,5,5
+Jack Welker,Ed,5,5
+Madrigal,Lydia,5,2
+Lydia,Chris,6,5
+Lydia,Dennis Markowski,5,5
+Lydia,Declan,12,5
+Lydia,Kenny,6,5
+Lydia,Todd Alquist,28,5
+Kaylee,Chris,5,5
+Dennis Markowski,Dan Wachsberger,6,5
+Dan Wachsberger,Todd Alquist,5,5
+Todd Alquist,Declan,10,5
+Kenny,Gang,6,5

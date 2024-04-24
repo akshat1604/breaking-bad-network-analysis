@@ -1,0 +1,140 @@
+source,target,weight,community
+Gale Boetticher,Jesse,41,3
+Gale Boetticher,Victor,12,3
+Gale Boetticher,Mike,20,3
+Gale Boetticher,Walter,48,3
+Gale Boetticher,Skyler,5,3
+Gale Boetticher,Albuquerque,6,3
+Gale Boetticher,Tim,6,3
+Gale Boetticher,Hank,44,3
+Gale Boetticher,Walt Jr.,11,3
+Gale Boetticher,Marie,6,3
+Gale Boetticher,DEA,12,3
+Gale Boetticher,Pollos,11,3
+Jesse,Victor,22,2
+Jesse,Walter,334,2
+Jesse,Mike,204,2
+Jesse,Badger,5,2
+Jesse,Skinny Pete,11,2
+Jesse,Saul Goodman,16,2
+Jesse,Tyrus Kitt,28,2
+Jesse,Hank,26,2
+Jesse,Andrea Cantillo,33,2
+Jesse,Brock,21,2
+Jesse,Marie,5,2
+Jesse,Skyler,15,2
+Jesse,Albuquerque,6,2
+Jesse,Gus Fring,6,2
+Jesse,Cartel,47,2
+Jesse,Walt Jr.,5,2
+Jesse,Pollos,6,2
+Jesse,DEA,5,2
+Jesse,Gaff,11,2
+Jesse,Ted Beneke,5,2
+Jesse,Benicio,11,2
+Jesse,Max Arciniega,5,2
+Jesse,Joaquin,6,2
+Jesse,Gomez,21,2
+Jesse,Kalanchoe,5,2
+Jesse,Munn,6,2
+Victor,Mike,30,3
+Victor,Marie,5,3
+Victor,Walter,17,3
+Victor,Saul Goodman,5,3
+Victor,Tyrus Kitt,6,3
+Victor,Andrea Cantillo,6,3
+Victor,DEA,6,3
+Victor,Hank,5,3
+Walter,Mike,65,4
+Walter,Marie,36,4
+Walter,Skyler,185,4
+Walter,Walt Jr.,22,4
+Walter,Huell Babineaux,6,4
+Walter,Hank,160,4
+Walter,Denny,6,4
+Walter,Lawson,6,4
+Walter,Saul Goodman,27,4
+Walter,Badger,5,4
+Walter,Gus Fring,5,4
+Walter,Brock,12,4
+Walter,Tyrus Kitt,33,4
+Walter,Tim,5,4
+Walter,Albuquerque,11,4
+Walter,Bogdan,17,4
+Walter,Pollos,5,4
+Walter,Cartel,11,4
+Walter,Juan Bolsa,5,4
+Walter,DEA,10,4
+Walter,Ted Beneke,16,4
+Walter,Barry Goodman,5,4
+Walter,Max Arciniega,5,4
+Walter,Gomez,5,4
+Walter,Francesca,5,4
+Walter,Rebecca,5,4
+Walter,Hector Salamanca,6,4
+Mike,Tyrus Kitt,6,3
+Mike,Cartel,10,3
+Mike,Walt Jr.,5,3
+Mike,Skyler,5,3
+Mike,Pollos,5,3
+Mike,Saul Goodman,11,3
+Mike,Hank,12,3
+Mike,Leonel Salamanca,6,3
+Mike,DEA,6,3
+Mike,Gaff,12,3
+Mike,Ted Beneke,5,3
+Mike,Barry Goodman,6,3
+Marie,Hank,46,3
+Marie,Skyler,22,3
+Marie,Saul Goodman,5,3
+Marie,Stephanie,11,3
+Marie,Walt Jr.,5,3
+Marie,DEA,6,3
+Skyler,Walt Jr.,11,4
+Skyler,Saul Goodman,18,4
+Skyler,Huell Babineaux,5,4
+Skyler,Hank,5,4
+Skyler,Bogdan,17,4
+Skyler,Patrick Kuby,5,4
+Skyler,Kuby,6,4
+Skyler,Cartel,5,4
+Skyler,Ted Beneke,45,4
+Skyler,DEA,5,4
+Saul Goodman,Lawson,5,4
+Saul Goodman,Patrick Kuby,6,4
+Saul Goodman,Hank,6,4
+Saul Goodman,Ted Beneke,11,4
+Saul Goodman,Cartel,5,4
+Saul Goodman,Huell Babineaux,6,4
+Saul Goodman,Kuby,6,4
+Saul Goodman,DEA,6,4
+Saul Goodman,Francesca,6,4
+Saul Goodman,Hector Salamanca,5,4
+Huell Babineaux,Kuby,6,4
+Hank,Bogdan,5,0
+Hank,Tim,5,0
+Hank,DEA,35,0
+Hank,Gomez,18,0
+Hank,Pollos,10,0
+Hank,Andrea Cantillo,5,0
+Hank,Cartel,6,0
+Hank,Max Arciniega,5,0
+Hank,Don,5,0
+Badger,Skinny Pete,5,2
+Tyrus Kitt,Gomez,6,2
+Andrea Cantillo,Brock,10,2
+Bogdan,Kuby,6,4
+Kuby,Ted Beneke,5,4
+Cartel,Gaff,5,0
+Cartel,Don Eladio Vuente,6,0
+Cartel,Max Arciniega,6,0
+Cartel,Benicio,5,0
+DEA,Gomez,5,3
+Leonel Salamanca,Cousins,5,1
+Cousins,Juan Bolsa,6,1
+Max Arciniega,Bolsa,6,0
+Max Arciniega,Don,5,0
+Max Arciniega,Salamanca,5,0
+Bolsa,Don Eladio Vuente,5,0
+Joaquin,Salamanca,5,0
+Kalanchoe,Munn,6,2

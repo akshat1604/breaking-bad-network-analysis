@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 1300px;
+                 height: 950px;
+                 background-color: white;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"font": {"color": "black"}, "group": 3, "id": "Walter", "label": "Walter", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 3, "id": "Albuquerque", "label": "Albuquerque", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 3, "id": "Donald Margolis", "label": "Donald Margolis", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Skyler", "label": "Skyler", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Hank", "label": "Hank", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Jesse", "label": "Jesse", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Walt Jr.", "label": "Walt Jr.", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 3, "id": "Carmen", "label": "Carmen", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Cousins", "label": "Cousins", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Marie", "label": "Marie", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 3, "id": "Jane Margolis", "label": "Jane Margolis", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "DEA", "label": "DEA", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 3, "id": "Saul Goodman", "label": "Saul Goodman", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Mike", "label": "Mike", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Leonel Salamanca", "label": "Leonel Salamanca", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Victor", "label": "Victor", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Marco", "label": "Marco", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Tuco Salamanca", "label": "Tuco Salamanca", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Bolsa", "label": "Bolsa", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Ted Beneke", "label": "Ted Beneke", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Merkert", "label": "Merkert", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Combo", "label": "Combo", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Badger", "label": "Badger", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Gale Boetticher", "label": "Gale Boetticher", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Clovis", "label": "Clovis", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Joe", "label": "Joe", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Gomez", "label": "Gomez", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Andrea Cantillo", "label": "Andrea Cantillo", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 3, "id": "Francesca", "label": "Francesca", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Don", "label": "Don", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Janice", "label": "Janice", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Ortega", "label": "Ortega", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Salamanca", "label": "Salamanca", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Skinny Pete", "label": "Skinny Pete", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 1, "id": "Brock", "label": "Brock", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Wendy", "label": "Wendy", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 0, "id": "Juan Bolsa", "label": "Juan Bolsa", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 2, "id": "Tortuga", "label": "Tortuga", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Patrick", "label": "Patrick", "shape": "dot", "size": 10}, {"font": {"color": "black"}, "group": 4, "id": "Chow", "label": "Chow", "shape": "dot", "size": 10}]);
+                  edges = new vis.DataSet([{"from": "Walter", "to": "Albuquerque", "value": 15, "width": 1}, {"from": "Walter", "to": "Donald Margolis", "value": 6, "width": 1}, {"from": "Walter", "to": "Skyler", "value": 284, "width": 1}, {"from": "Walter", "to": "Hank", "value": 93, "width": 1}, {"from": "Walter", "to": "Jesse", "value": 444, "width": 1}, {"from": "Walter", "to": "Walt Jr.", "value": 10, "width": 1}, {"from": "Walter", "to": "Carmen", "value": 17, "width": 1}, {"from": "Walter", "to": "Cousins", "value": 46, "width": 1}, {"from": "Walter", "to": "Marie", "value": 21, "width": 1}, {"from": "Walter", "to": "Jane Margolis", "value": 6, "width": 1}, {"from": "Walter", "to": "DEA", "value": 15, "width": 1}, {"from": "Walter", "to": "Saul Goodman", "value": 79, "width": 1}, {"from": "Walter", "to": "Mike", "value": 51, "width": 1}, {"from": "Walter", "to": "Leonel Salamanca", "value": 17, "width": 1}, {"from": "Walter", "to": "Victor", "value": 17, "width": 1}, {"from": "Walter", "to": "Marco", "value": 5, "width": 1}, {"from": "Walter", "to": "Tuco Salamanca", "value": 18, "width": 1}, {"from": "Walter", "to": "Bolsa", "value": 16, "width": 1}, {"from": "Walter", "to": "Ted Beneke", "value": 15, "width": 1}, {"from": "Walter", "to": "Merkert", "value": 5, "width": 1}, {"from": "Walter", "to": "Combo", "value": 16, "width": 1}, {"from": "Walter", "to": "Badger", "value": 5, "width": 1}, {"from": "Walter", "to": "Gale Boetticher", "value": 61, "width": 1}, {"from": "Walter", "to": "Clovis", "value": 6, "width": 1}, {"from": "Walter", "to": "Joe", "value": 6, "width": 1}, {"from": "Walter", "to": "Gomez", "value": 17, "width": 1}, {"from": "Walter", "to": "Andrea Cantillo", "value": 5, "width": 1}, {"from": "Albuquerque", "to": "Donald Margolis", "value": 2, "width": 1}, {"from": "Albuquerque", "to": "Hank", "value": 6, "width": 1}, {"from": "Albuquerque", "to": "Cousins", "value": 5, "width": 1}, {"from": "Albuquerque", "to": "Francesca", "value": 6, "width": 1}, {"from": "Donald Margolis", "to": "Jane Margolis", "value": 6, "width": 1}, {"from": "Skyler", "to": "Hank", "value": 52, "width": 1}, {"from": "Skyler", "to": "Walt Jr.", "value": 16, "width": 1}, {"from": "Skyler", "to": "Marie", "value": 41, "width": 1}, {"from": "Skyler", "to": "Jesse", "value": 35, "width": 1}, {"from": "Skyler", "to": "Don", "value": 5, "width": 1}, {"from": "Skyler", "to": "Tuco Salamanca", "value": 5, "width": 1}, {"from": "Skyler", "to": "Ted Beneke", "value": 53, "width": 1}, {"from": "Skyler", "to": "Saul Goodman", "value": 17, "width": 1}, {"from": "Skyler", "to": "Cousins", "value": 5, "width": 1}, {"from": "Skyler", "to": "DEA", "value": 5, "width": 1}, {"from": "Skyler", "to": "Combo", "value": 5, "width": 1}, {"from": "Hank", "to": "DEA", "value": 23, "width": 1}, {"from": "Hank", "to": "Marie", "value": 122, "width": 1}, {"from": "Hank", "to": "Jane Margolis", "value": 10, "width": 1}, {"from": "Hank", "to": "Gomez", "value": 61, "width": 1}, {"from": "Hank", "to": "Merkert", "value": 22, "width": 1}, {"from": "Hank", "to": "Jesse", "value": 101, "width": 1}, {"from": "Hank", "to": "Victor", "value": 5, "width": 1}, {"from": "Hank", "to": "Janice", "value": 5, "width": 1}, {"from": "Hank", "to": "Combo", "value": 6, "width": 1}, {"from": "Hank", "to": "Ortega", "value": 6, "width": 1}, {"from": "Hank", "to": "Badger", "value": 5, "width": 1}, {"from": "Hank", "to": "Saul Goodman", "value": 10, "width": 1}, {"from": "Hank", "to": "Cousins", "value": 11, "width": 1}, {"from": "Hank", "to": "Joe", "value": 6, "width": 1}, {"from": "Hank", "to": "Salamanca", "value": 5, "width": 1}, {"from": "Hank", "to": "Tuco Salamanca", "value": 6, "width": 1}, {"from": "Hank", "to": "Leonel Salamanca", "value": 11, "width": 1}, {"from": "Hank", "to": "Marco", "value": 17, "width": 1}, {"from": "Hank", "to": "Bolsa", "value": 5, "width": 1}, {"from": "Hank", "to": "Ted Beneke", "value": 6, "width": 1}, {"from": "Jesse", "to": "Marie", "value": 11, "width": 1}, {"from": "Jesse", "to": "Jane Margolis", "value": 30, "width": 1}, {"from": "Jesse", "to": "Saul Goodman", "value": 100, "width": 1}, {"from": "Jesse", "to": "Don", "value": 5, "width": 1}, {"from": "Jesse", "to": "Marco", "value": 5, "width": 1}, {"from": "Jesse", "to": "DEA", "value": 10, "width": 1}, {"from": "Jesse", "to": "Victor", "value": 22, "width": 1}, {"from": "Jesse", "to": "Skinny Pete", "value": 33, "width": 1}, {"from": "Jesse", "to": "Combo", "value": 11, "width": 1}, {"from": "Jesse", "to": "Cousins", "value": 5, "width": 1}, {"from": "Jesse", "to": "Badger", "value": 23, "width": 1}, {"from": "Jesse", "to": "Gale Boetticher", "value": 12, "width": 1}, {"from": "Jesse", "to": "Merkert", "value": 6, "width": 1}, {"from": "Jesse", "to": "Leonel Salamanca", "value": 5, "width": 1}, {"from": "Jesse", "to": "Tuco Salamanca", "value": 5, "width": 1}, {"from": "Jesse", "to": "Gomez", "value": 5, "width": 1}, {"from": "Jesse", "to": "Ted Beneke", "value": 5, "width": 1}, {"from": "Jesse", "to": "Andrea Cantillo", "value": 22, "width": 1}, {"from": "Jesse", "to": "Brock", "value": 5, "width": 1}, {"from": "Jesse", "to": "Wendy", "value": 11, "width": 1}, {"from": "Jesse", "to": "Mike", "value": 22, "width": 1}, {"from": "Walt Jr.", "to": "Mike", "value": 5, "width": 1}, {"from": "Cousins", "to": "DEA", "value": 5, "width": 1}, {"from": "Cousins", "to": "Mike", "value": 6, "width": 1}, {"from": "Cousins", "to": "Gomez", "value": 5, "width": 1}, {"from": "Cousins", "to": "Salamanca", "value": 6, "width": 1}, {"from": "Cousins", "to": "Leonel Salamanca", "value": 11, "width": 1}, {"from": "Cousins", "to": "Tuco Salamanca", "value": 5, "width": 1}, {"from": "Cousins", "to": "Bolsa", "value": 6, "width": 1}, {"from": "Cousins", "to": "Marco", "value": 5, "width": 1}, {"from": "Cousins", "to": "Juan Bolsa", "value": 6, "width": 1}, {"from": "Marie", "to": "Gomez", "value": 18, "width": 1}, {"from": "Marie", "to": "DEA", "value": 5, "width": 1}, {"from": "Marie", "to": "Juan Bolsa", "value": 5, "width": 1}, {"from": "DEA", "to": "Tortuga", "value": 5, "width": 1}, {"from": "DEA", "to": "Gomez", "value": 12, "width": 1}, {"from": "DEA", "to": "Merkert", "value": 5, "width": 1}, {"from": "DEA", "to": "Bolsa", "value": 6, "width": 1}, {"from": "Saul Goodman", "to": "Mike", "value": 29, "width": 1}, {"from": "Saul Goodman", "to": "Francesca", "value": 6, "width": 1}, {"from": "Saul Goodman", "to": "Andrea Cantillo", "value": 5, "width": 1}, {"from": "Mike", "to": "Marco", "value": 6, "width": 1}, {"from": "Mike", "to": "Victor", "value": 18, "width": 1}, {"from": "Mike", "to": "Ted Beneke", "value": 5, "width": 1}, {"from": "Mike", "to": "Leonel Salamanca", "value": 12, "width": 1}, {"from": "Mike", "to": "Gomez", "value": 5, "width": 1}, {"from": "Mike", "to": "Patrick", "value": 5, "width": 1}, {"from": "Mike", "to": "Gale Boetticher", "value": 6, "width": 1}, {"from": "Mike", "to": "Chow", "value": 5, "width": 1}, {"from": "Marco", "to": "Leonel Salamanca", "value": 49, "width": 1}, {"from": "Leonel Salamanca", "to": "Salamanca", "value": 5, "width": 1}, {"from": "Leonel Salamanca", "to": "Bolsa", "value": 5, "width": 1}, {"from": "Salamanca", "to": "Tuco Salamanca", "value": 6, "width": 1}, {"from": "Salamanca", "to": "Juan Bolsa", "value": 6, "width": 1}, {"from": "Tuco Salamanca", "to": "Bolsa", "value": 6, "width": 1}, {"from": "Victor", "to": "Gale Boetticher", "value": 17, "width": 1}, {"from": "Gomez", "to": "Janice", "value": 5, "width": 1}, {"from": "Gomez", "to": "Merkert", "value": 11, "width": 1}, {"from": "Juan Bolsa", "to": "Bolsa", "value": 5, "width": 1}, {"from": "Skinny Pete", "to": "Combo", "value": 6, "width": 1}, {"from": "Skinny Pete", "to": "Badger", "value": 12, "width": 1}, {"from": "Combo", "to": "Ortega", "value": 6, "width": 1}, {"from": "Combo", "to": "Andrea Cantillo", "value": 6, "width": 1}, {"from": "Badger", "to": "Clovis", "value": 6, "width": 1}, {"from": "Badger", "to": "Andrea Cantillo", "value": 5, "width": 1}, {"from": "Andrea Cantillo", "to": "Brock", "value": 10, "width": 1}, {"from": "Wendy", "to": "Patrick", "value": 6, "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "repulsion": {
+            "centralGravity": 0.2,
+            "damping": 0.09,
+            "nodeDistance": 200,
+            "springConstant": 0.05,
+            "springLength": 200
+        },
+        "solver": "repulsion",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
