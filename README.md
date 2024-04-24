@@ -16,14 +16,14 @@ Set and filmed in Albuquerque, New Mexico, the series follows Walter White, an u
 - Breaking Bad aired on AMC from 2008 to 2013 with five successful seasons and 62 total episodes.
 - In 2013, Breaking Bad entered the Guinness World Records as the most critically acclaimed TV show of all-time.
 
-<img src = 'src/imgs/rottentomatoes_review.png' width = 80%>
+<!--  -->
 
 - The cold opens became one of the most legendary parts of the show and were works of art in their own right.
 - The number one ranked cold open is season 2 episode 7 when there is a music video titled “The Ballad of Heisenberg” about his ascension to the top of a drug empire.
-- There’s an incredible cast, award-winning script, several spinoffs, multiple languages, and of course, that creative plot.
+- There’s an incredible cast, award-winning script, several spinoffs, multiple languages, and of course, the creative plot.
 - Breaking Bad is one of the most successful series of all time, with a legacy that continues to inform new generations of shows.
 - From the influential cold opens, incredible writing, sympathetic acting, and compelling plot, the series changed television forever.
-- Just take a chance on the pilot and we know you’ll be hooked!
+- Just take a chance on the pilot and I know you’ll be hooked!
 
 ## The Project
 
@@ -41,7 +41,7 @@ It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of 
 
 - Summary of all 62 episodes and record it based on season.
     - ie, for 6 seasons, intersted in having only 6 summary files.
-- Character list of each episodes.
+- Character list of each episode.
 
 ### Tools used for this part
 
@@ -97,57 +97,7 @@ It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of 
 └── data_copy # Copy of 'data' directory
 ```
 
-## Reproducing the project
 
-To recreate this project on your own computer, do the following.<br>
-I have used [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) through-out the project and assuming you'll too (If not, feel free to change the below code accordingly).
-
-### 1. Using *yml* file
-
-- Download the whole [the_breaking_bad_network](https://github.com/jishnukoliyadan/the_breaking_bad_network) directory to your local work space.
-
-```
-wget https://github.com/jishnukoliyadan/the_breaking_bad_network/archive/refs/heads/master.zip -O the_breaking_bad_network-master.zip
-unzip the_breaking_bad_network-master.zip
-cd the_breaking_bad_network-master
-```
-
-- Once we are in **the_breaking_bad_network** directory, lets create conda environment and launch JupyterLab
-
-```
-conda env create -f breaking_bad.yml
-conda activate breaking_bad
-jupyter-lab
-```
-
-### 2. Using *requirements.txt* file
-
-- Download the whole [the_breaking_bad_network](https://github.com/jishnukoliyadan/the_breaking_bad_network) directory to your local work space.
-
-```
-wget https://github.com/jishnukoliyadan/the_breaking_bad_network/archive/refs/heads/master.zip -O the_breaking_bad_network-master.zip
-unzip the_breaking_bad_network-master.zip
-cd the_breaking_bad_network-master
-```
-
-- Let's create conda environment and activate it.
-
-```
-conda create -n breaking_bad python=3.10.8 -y
-conda activate breaking_bad
-```
-
-- Install prerequisite libraries & lauch JupyterLab.
-
-```
-pip install -r requirements.txt --upgrade
-jupyter-lab
-```
-### 3. Using *Docker* image
-
-<img src = 'https://raw.githubusercontent.com/jishnukoliyadan/the_breaking_bad_network/master/docker_files/dockerhub_view.png'>
-
-We can use the [docker image](https://hub.docker.com/r/jishnukoliyadan/breaking-bad-network) for re-creating this project.
 
 ## Reference & Credits
 
@@ -159,7 +109,3 @@ We can use the [docker image](https://hub.docker.com/r/jishnukoliyadan/breaking-
 - Chapter 3 - Network Structure and Measures : [Analyzing the Social Web by Jennifer Golbeck](https://www.sciencedirect.com/book/9780124055315/analyzing-the-social-web)
 - [Translating Networks: Assessing Correspondence Between Network Visualisation and Analytics](https://hal.archives-ouvertes.fr/halshs-02179024/)
 - [pijamasurf.com](pijamasurf.com), [usmagazine.com](usmagazine.com)
-
-## License
-
-The license can be found in the [LICENSE](LICENSE) file.
