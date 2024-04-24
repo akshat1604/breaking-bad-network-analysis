@@ -52,18 +52,18 @@ It was inspired from [DataCamp](https://datacamp.com/)'s [A Network Analysis of 
 
 ## [Part 2 : Relationship Network analysis](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb)
 
-- In Part-1 using [Scraper.ipynb](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb) we have generated the summaeirs all 62 episodes and character list.
-- In this part using [Relationship_Finder.ipynb](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb) we will analyse the relationship between characters.
+- In Part-1 using [Scraper.ipynb](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Scrapper.ipynb) I have generated the summaeirs all 62 episodes and character list.
+- In this part using [Relationship_Finder.ipynb](https://github.com/jishnukoliyadan/the_breaking_bad_network/blob/master/Relationship_Finder.ipynb) I will analyse the relationship between characters.
 
 <img src = 'src/imgs/combined_summary_gephi.svg' width = 75%>
 
-### How we gonna proceed this part ?
+### How am I gonna proceed about this part ?
 
 - From the scraped data using named entity recognition and our own defined rules 'll create a relationship dataset.
-- Over that relationship data we will perform centrality measures to find the most important character.
-- Using community detection, we will try to find-out what all communities are present and leader of those clans.
-- We will tkae the help of visualization techniques to make the analysis more simple.
-- For further analysis, we will export the network data for the visualization in [Gephi](https://gephi.org/).
+- Over that relationship data I will perform centrality measures to find the most important character.
+- Using community detection, I will try to find-out what all communities are present and leader of those communities.
+- I will tkae the help of visualization techniques to make the analysis more simple.
+- For further analysis, I will export the network data for the visualization in [Gephi](https://gephi.org/).
 
 ### Tools used for this part
 
